@@ -295,22 +295,22 @@ export default function Home({ IS_CLOUD, enforceSSO }: Props) {
 
 	return (
 		<>
-			<div className="flex flex-col space-y-2 text-center">
-				<h1 className="text-2xl font-semibold tracking-tight">
-					<div className="flex flex-row items-center justify-center gap-2">
-						<Logo
-							className="size-12"
-							logoUrl={
-								whitelabeling?.loginLogoUrl ||
-								whitelabeling?.logoUrl ||
-								undefined
-							}
-						/>
-						Sign in
-					</div>
+			<div className="flex flex-col items-center gap-3">
+				<Logo
+					className="size-24"
+					logoUrl={
+						whitelabeling?.loginLogoUrl || whitelabeling?.logoUrl || undefined
+					}
+				/>
+
+				<h1 className="text-2xl font-bold text-center leading-tight">
+					Plataforma de Despliegue Continuo
+					<br />
+					de Aplicaciones Académicas
 				</h1>
-				<p className="text-sm text-muted-foreground">
-					Enter your email and password to sign in
+
+				<p className="text-sm text-muted-foreground text-center">
+					Universidad Nacional de Hurlingham
 				</p>
 			</div>
 			{error && (
