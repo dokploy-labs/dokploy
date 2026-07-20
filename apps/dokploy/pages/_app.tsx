@@ -41,7 +41,7 @@ const MyApp = ({
 				`}
 			</style>
 			<Head>
-				<title>Dokploy</title>
+				<title>UNAHUR | Plataforma de Despliegue</title>
 			</Head>
 			<TooltipProvider>
 				<ThemeProvider
