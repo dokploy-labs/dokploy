@@ -14,6 +14,76 @@
 
 Dokploy is a free, self-hostable Platform as a Service (PaaS) that simplifies the deployment and management of applications and databases.
 
+# Personalización UNAHUR
+
+> Este repositorio corresponde a un **fork personalizado de Dokploy**, desarrollado como parte del Proyecto de Práctica Profesional Supervisada (PPS) de la **Licenciatura en Informática de la Universidad Nacional de Hurlingham (UNAHUR)**.
+
+El objetivo de este fork es adaptar la plataforma Dokploy a la identidad institucional de la universidad.
+
+---
+
+## Repositorios
+
+- **Proyecto original:** https://github.com/Dokploy/dokploy
+- **Fork del proyecto:** https://github.com/dokploy-labs/dokploy
+
+---
+
+# Personalizaciones realizadas
+
+Actualmente este fork incorpora las siguientes modificaciones respecto del proyecto original:
+
+## Identidad institucional
+
+- Incorporación del logotipo oficial de la Universidad Nacional de Hurlingham.
+- Personalización de la pantalla de inicio de sesión.
+- Actualización del título de la aplicación mostrado en el navegador.
+- Reemplazo del favicon institucional.
+- Rediseño del layout de bienvenida (Onboarding).
+- Adaptación de colores y elementos gráficos para respetar la identidad visual institucional.
+
+---
+
+# Archivos modificados
+
+```text
+apps/
+└── dokploy/
+    ├── components/
+    │   ├── layouts/
+    │   │   └── onboarding-layout.tsx
+    │   │
+    │   └── shared/
+    │       └── logo.tsx
+    │
+    ├── pages/
+    │   ├── _app.tsx
+    │   └── index.tsx
+    │
+    └── public/
+        ├── icon.svg
+        └── images/
+            ├── logo-hurlingham.png
+            └── unahur-iso.png
+```
+
+---
+
+# Estado del proyecto
+
+| Funcionalidad | Estado |
+|--------------|:------:|
+| Creación del fork | ✅ |
+| Personalización institucional | ✅ |
+| Generación de imagen Docker personalizada | ✅ |
+| Despliegue en Docker Swarm | ✅ |
+---
+
+
+> A partir de este punto se mantiene el README original del proyecto Dokploy, con el objetivo de conservar la documentación oficial y facilitar la incorporación de futuras actualizaciones provenientes del repositorio principal.
+
+---
+
 ## ✨ Features
 
 Dokploy includes multiple features to make your life easier.
